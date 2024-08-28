@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" tools:context=".DetailActivity" android:id="@+id/iv_linear">
+
+
+    <ImageView
+        android:id="@+id/light_logo"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/light_logo"
+        android:padding="5dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/iv_poster"
+                android:layout_width="200dp"
+                android:layout_height="300dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_original_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_genres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:paddingLeft="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_first_air_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tv_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColor="#000000"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="더보기..." />
+
+        <ImageButton
+            android:id="@+id/tv_link"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/justwatch" />
+    </LinearLayout>
+</LinearLayout>
